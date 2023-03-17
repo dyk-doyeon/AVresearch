@@ -1,49 +1,37 @@
 
 (() => {
-  const progressCircle = document.querySelector(".autoplay-progress svg"),
-        progressContent = document.querySelector(".autoplay-progress span");
+  const contrastAll = document.querySelector(".contrastColour"),
+        changeNav = document.querySelector("#navbar"),
+        changeImgOne = document.querySelector(".mainImg"),
+        changeImgtwo = document.querySelector(".contrastImg"),
+        changeFooter = document.querySelector("#footer");
+        
+  let count = 1;
+  
+  // Contrast Function
+  function contrastColour() {
 
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-      },
-      on: {
-        autoplayTimeLeft(s, time, progress) {
-          progressCircle.style.setProperty("--progress", 1 - progress);
-          progressContent.textContent = `${Math.ceil(time / 1000)}s`;
-        }
-      }
-    });
+    count = count + 1;
 
-  // Handle scrolling when tapping on the navbar menu
-  const navbarMenu = document.querySelector('#navbar__menu');
+    if (count%2 === 0) {
+      changeNav.style.color = "white";
+      changeNav.style.backgroundColor = "black";
+      changeImgOne.style.display = "none";
+      changeImgtwo.style.display = "block";
+      changeFooter.style.color = "white";
+      changeFooter.style.backgroundColor = "black";
 
-  navbarMenu.addEventListener("click", (event) => {
-  let target = event.target,
-  link = target.dataset.link;
-  if(link == null) {
-  return;
-  }
-  navbarMenu.classList.remove('open');
-  scrollIntoView(link);
-  });
+    } else {
+      changeNav.style.color = "#ffb62e";
+      changeNav.style.backgroundColor = "#1C304A";
+      changeImgOne.style.display = "block";
+      changeImgtwo.style.display = "none";
+      changeFooter.style.color = "#ffb62e";
+      changeFooter.style.backgroundColor = "#1C304A";
+    }
+  };
+  contrastAll.addEventListener("click", contrastColour);
 
-  // Navbar toggle button for small screen
-  const navbarToggleBtn = document.querySelector(".navbar__toggle-btn");
-  navbarToggleBtn.addEventListener("click", () => {
-  navbarMenu.classList.toggle("open");
-  });
 
 
 })()
