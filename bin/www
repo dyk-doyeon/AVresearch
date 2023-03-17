@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('fip-winter23:server');
+var debug = require('debug')('a/v-research:server');
 var http = require('http');
 
 /**
