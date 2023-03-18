@@ -1,0 +1,124 @@
+#video {
+  margin: auto;
+  width: 1200px;
+}
+
+#video h2 {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.video__container {
+  display: flex;
+  flex-direction: column;
+  width: 920px;
+  margin: auto;
+}
+
+.video__container button {
+  cursor: pointer;
+  border: none;
+  background-color: var(--color-dark-blue);
+}
+
+.video__container button:hover {
+  transform: scale(1.2);
+}
+
+.video__container__player {
+  width: 916px;
+  height: 515px;
+  background-color: var(--color-black);
+  margin: auto;
+}
+
+.video__container__player video {
+  width: 100%;
+  height: 100%;
+}
+
+.video__controller__box {
+  width: 916px;
+  height: 160px;
+  background-color: var(--color-dark-blue);
+  margin-left: 2px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.video__controller__box i {
+  color: var(--color-white);
+  font-size: 40px;
+}
+
+.video__controller__up {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 20px;
+}
+
+.video__controller__up button {
+  margin-right: 10px;
+}
+
+.video__controller__up .progress {
+  width: 550px;
+  height: 30px;
+  margin-top: 6px;
+  background-color: var(--color-white);
+  margin-right: 10px;
+}
+
+#progress {
+  background-color: var(--color-white);
+}
+
+.video__controller__up h6 {
+  color: var(--color-white);
+  margin-top: 10px;
+}
+
+.video__controller__down {
+  display: flex;
+  flex-direction: row;
+  width: 916px;
+}
+
+.video__controller__down button {
+  padding: 16px 91px;
+  border: 3px solid var(--color-orange);
+}
+
+
+// Transcript
+#transcriptBtn {
+  margin: 30px 0 30px 4px;
+  width: 200px;
+  padding: 15px;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+#transcriptBtn:hover {
+  transform: scale(1.2);
+}
+
+.transcript__text {
+  display: none;
+  padding: 15px;
+  background-color: var(--color-black);
+  margin-bottom: 25px;
+}
+
+.transcript__text h6 {
+  line-height: 28px;
+  color: var(--color-white);
+}
+
+.transcript__text.open {
+  display: block;
+}

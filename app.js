@@ -25,8 +25,6 @@ app.use('/', indexRouter);
 app.use('/audio', audioRouter);
 app.use('/video', videoRouter);
 
-
-
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

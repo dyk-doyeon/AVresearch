@@ -8,11 +8,11 @@ router.get('/', function (req, res, next) {
 });
 
 router.get('/audio', function (req, res, next) {
-  res.render('audio', { title: 'This is the audio section' });
+  res.render('audio', { title: 'Audio Page' });
 });
 
 router.get('/video', function (req, res, next) {
-  res.render('video', { title: 'This is the video section' });
+  res.render('video', { title: 'Video Page' });
 });
 
 

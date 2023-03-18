@@ -1,3 +1,65 @@
-<section>
-  <h2>This is the video Page</h2>
+<section id="video">
+  <h2>Video</h2>
+  <div class="video__container">
+    <div class="video__container__player">
+      <a href="https://www.youtube.com/watch?v=yaLMZwZ7V8k&t=20s" target="_blank">
+        <video>
+          <source src="/video/video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </a>
+    </div>
+    <div class="video__controller__box" aria-label="Video Player Controller">
+      <div class="video__controller__up">
+        <button id="playpause" type="button" aria-label="Play">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <button id="stop" type="button" aria-label="Stop">
+          <i class="fa-solid fa-stop"></i>
+        </button>
+        <div class="progress" aria-label="Progress Bar">
+          <progress id="progress" value="0" min="0">
+            <span id="progress-bar"></span>
+          </progress>
+        </div>
+        <div>
+          <h6> Current Time: <span class="currentTime"></span> / 1:08 </h6>
+        </div>
+      </div>
+      <div class="video__controller__down">
+        <button id="volinc" type="button"  aria-label="Volume Up">
+          <i class="fa-solid fa-volume-high"></i>
+        </button>
+        <button id="voldec" type="button" aria-label="Volume Down">
+          <i class="fa-solid fa-volume-low"></i>
+        </button>
+        <button id="fs" type="button" aria-label="Full Screen">
+          <i class="fa-solid fa-maximize"></i>
+        </button>
+        <button id="subtitles" type="button" aria-label="Subtitles">
+          <i class="fa-solid fa-closed-captioning"></i>
+        </button>
+      </div>
+    </div>
+    <div class="transcript">
+      <div id="transcriptBtn">
+        <h4>Transcript</h4>
+      </div>
+      <div class="transcript__text">
+        <h6>
+          [contemplative piano music] <br><br>
+          JANE AKINYI: My name is Jane Akinyi. I am a self-advocate from Kenya. I was born
+          with this intellectual disability. <br>
+          What I see, it is very, very few people understands people with intellectual disability. It's not many. Sometimes they're telling us, “You are stupid. You cannot be able to make decisions like other people.” <br>
+          When we can be able to speak up, we can able to tell them, “We have equal rights like you. We can able to make decision like you.”<br>
+          We have the right to be employment like other persons. We have right to live
+          independently like other persons.<br> <br>
+          VOICE-OVER: Where are you in your Journey to Inclusion? For more information, go to
+          DisabilityPhilanthropy.org, and promote using the hashtag DisabilityInclusion. Brought to you by the Presidents' Council on Disability Inclusion in Philanthropy.
+        </h6>
+      </div>
+    </div>
+  </div>
 </section>
+
+<script src="/js/video.js" type="module" defer></script>

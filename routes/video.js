@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/video', function (req, res, next) {
-  res.render('video', { title: 'This is the video section' });
+  res.render('video', { title: 'Video Page' });
 });
 
 module.exports = router;

@@ -13,5 +13,8 @@
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "swiper": "^9.1.0"
+  },
+  "devDependencies": {
+    "video.js": "^8.0.4"
   }
 }

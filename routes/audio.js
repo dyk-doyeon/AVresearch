@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/audio', function (req, res, next) {
-  res.render('audio', { title: 'This is the audio section' });
+  res.render('audio', { title: 'Audio Page' });
 });
 
 module.exports = router;

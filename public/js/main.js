@@ -1,5 +1,6 @@
-
+'use strict';
 (() => {
+  // Main
   const contrastAll = document.querySelector(".contrastColour"),
         changeNav = document.querySelector("#navbar"),
         changeImgOne = document.querySelector(".mainImg"),
@@ -31,7 +32,5 @@
     }
   };
   contrastAll.addEventListener("click", contrastColour);
-
-
 
 })()
