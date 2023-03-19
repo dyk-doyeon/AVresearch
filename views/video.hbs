@@ -3,7 +3,7 @@
   <div class="video__container">
     <div class="video__container__player">
       <a href="https://www.youtube.com/watch?v=yaLMZwZ7V8k&t=20s" target="_blank">
-        <video id="videoPlay">
+        <video loop id="videoPlay">
           <source src="/video/video.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
@@ -18,9 +18,7 @@
           <i class="fa-solid fa-stop"></i>
         </button>
         <div class="progress" aria-label="Progress Bar">
-          <progress id="progress" value="0" min="0">
-            <span id="progress-bar"></span>
-          </progress>
+          <progress id="progress" value="0" max="100"></progress>
         </div>
         <div>
           <p> Current Time: 0:<span class="currentTime"></span> / 1:08 </p>
