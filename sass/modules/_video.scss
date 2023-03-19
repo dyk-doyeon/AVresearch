@@ -55,7 +55,8 @@
 .video__controller__up {
   display: flex;
   flex-direction: row;
-  padding: 20px 20px;
+  justify-content: space-between;
+  padding: 20px 38px;
 }
 
 .video__controller__up button {
@@ -74,9 +75,13 @@
   background-color: var(--color-white);
 }
 
-.video__controller__up h6 {
+.video__controller__up p:first-child {
   color: var(--color-white);
-  margin-top: 10px;
+}
+
+.video__controller__up p:last-child {
+  color: var(--color-white);
+  margin-top: 5px;
 }
 
 .video__controller__down {

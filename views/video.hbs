@@ -3,7 +3,7 @@
   <div class="video__container">
     <div class="video__container__player">
       <a href="https://www.youtube.com/watch?v=yaLMZwZ7V8k&t=20s" target="_blank">
-        <video>
+        <video id="videoPlay">
           <source src="/video/video.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
@@ -11,7 +11,7 @@
     </div>
     <div class="video__controller__box" aria-label="Video Player Controller">
       <div class="video__controller__up">
-        <button id="playpause" type="button" aria-label="Play">
+        <button id="play" type="button" aria-label="Play">
           <i class="fa-solid fa-play"></i>
         </button>
         <button id="stop" type="button" aria-label="Stop">
@@ -23,17 +23,18 @@
           </progress>
         </div>
         <div>
-          <h6> Current Time: <span class="currentTime"></span> / 1:08 </h6>
+          <p> Current Time: 0:<span class="currentTime"></span> / 1:08 </p>
+          <p> Volume Level: <span class="volumeLevel"></span></p>
         </div>
       </div>
       <div class="video__controller__down">
-        <button id="volinc" type="button"  aria-label="Volume Up">
+        <button id="volup" type="button"  aria-label="Volume Up">
           <i class="fa-solid fa-volume-high"></i>
         </button>
-        <button id="voldec" type="button" aria-label="Volume Down">
+        <button id="voldown" type="button" aria-label="Volume Down">
           <i class="fa-solid fa-volume-low"></i>
         </button>
-        <button id="fs" type="button" aria-label="Full Screen">
+        <button id="fullscreen" type="button" aria-label="Full Screen">
           <i class="fa-solid fa-maximize"></i>
         </button>
         <button id="subtitles" type="button" aria-label="Subtitles">

@@ -2,7 +2,7 @@
   <h2>Audio</h2>
   <div class="audio__container">
     <div class="audio__container__player">
-      <audio controls>
+      <audio id="audioPlay">
         <source src="/audio/audio.mp3" type="audio/mp3">
         Your browser does not support the audio element.
       </audio>
@@ -15,20 +15,21 @@
           </progress>
         </div>
         <div>
-          <h6> Current Time: <span class="currentTime"></span> / 1:08 </h6>
+          <p> Current Time: 0:<span class="currentTime"></span> / 1:08 </p>
+          <p> Volume Level: <span class="volumeLevel"></span></p>
         </div>
       </div>
       <div class="audio__controller__down">
-        <button id="playpause" type="button" aria-label="Play">
+        <button id="play" type="button" aria-label="Play">
           <i class="fa-solid fa-play"></i>
         </button>
         <button id="stop" type="button" aria-label="Stop">
           <i class="fa-solid fa-stop"></i>
         </button>
-        <button id="volinc" type="button"  aria-label="Volume Up">
+        <button id="volup" type="button"  aria-label="Volume Up">
           <i class="fa-solid fa-volume-high"></i>
         </button>
-        <button id="voldec" type="button" aria-label="Volume Down">
+        <button id="voldown" type="button" aria-label="Volume Down">
           <i class="fa-solid fa-volume-low"></i>
         </button>
       </div>

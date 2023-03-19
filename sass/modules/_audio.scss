@@ -50,7 +50,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px 30px;
+  padding: 20px 50px;
 }
 
 .audio__controller__up button {
@@ -60,11 +60,16 @@
 .audio__controller__up .progress {
   width: 600px;
   height: 30px;
+  margin-top: 5px;
   background-color: var(--color-white);
   margin-right: 10px;
 }
 
-.audio__controller__up h6 {
+.audio__controller__up p:first-child {
+  color: var(--color-white);
+}
+
+.audio__controller__up p:last-child {
   color: var(--color-white);
   margin-top: 5px;
 }
