@@ -1,0 +1,83 @@
+#audio {
+  margin: auto;
+  width: 1200px;
+}
+
+#audio h2 {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.audio__container {
+  display: flex;
+  flex-direction: column;
+  width: 920px;
+  margin: auto;
+}
+
+.audio__container button {
+  cursor: pointer;
+  border: none;
+  background-color: var(--color-dark-blue);
+}
+
+.audio__container button:hover {
+  transform: scale(1.2);
+}
+
+.audio__container__player {
+  width: 916px;
+  background-color: var(--color-black);
+  margin: auto;
+}
+
+.audio__controller__box {
+  width: 916px;
+  height: 160px;
+  background-color: var(--color-dark-blue);
+  margin-left: 2px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.audio__controller__box i {
+  color: var(--color-white);
+  font-size: 40px;
+}
+
+.audio__controller__up {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+.audio__controller__up button {
+  margin-right: 10px;
+}
+
+.audio__controller__up .progress {
+  width: 600px;
+  height: 30px;
+  background-color: var(--color-white);
+  margin-right: 10px;
+}
+
+.audio__controller__up h6 {
+  color: var(--color-white);
+  margin-top: 5px;
+}
+
+.audio__controller__down {
+  display: flex;
+  flex-direction: row;
+  width: 916px;
+  margin-top: 6px;
+}
+
+.audio__controller__down button {
+  padding: 19px 93.5px;
+  border: 3px solid var(--color-orange);
+}
+
