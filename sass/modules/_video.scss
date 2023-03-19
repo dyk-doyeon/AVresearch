@@ -71,8 +71,26 @@
   margin-right: 10px;
 }
 
-#progress {
+#progress[value] {
+  width: 550px;
+  height: 30px;
+  appearance: none;
+  border: none;
   background-color: var(--color-white);
+}
+
+#progress[value]::-moz-progress-bar {
+  background-image: linear-gradient(
+    to right, var(--color-orange), var(--color-yellow)
+  );
+  transition: width 1s linear;
+}
+
+#progress[value]::-webkit-progress-value {
+  background-image: linear-gradient(
+    to right, var(--color-orange), var(--color-yellow)
+  );
+  transition: width 1s linear;
 }
 
 .video__controller__up p:first-child {
