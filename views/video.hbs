@@ -11,40 +11,40 @@
     </div>
     <div class="video__controller__box" aria-label="Video Player Controller">
       <div class="video__controller__up">
-        <button id="play" type="button" aria-label="Play">
+        <button id="play" type="button" aria-label="Play Button" onkeydown="playVideo()">
           <i class="fa-solid fa-play"></i>
         </button>
-        <button id="stop" type="button" aria-label="Stop">
+        <button id="stop" type="button" aria-label="Stop Button" onkeydown="pauseVideo()">
           <i class="fa-solid fa-stop"></i>
         </button>
         <div class="progress" aria-label="Progress Bar">
           <progress id="progress" value="0" max="100"></progress>
         </div>
         <div>
-          <p> Current Time: 0:<span class="currentTime"></span> / 1:08 </p>
-          <p> Volume Level: <span class="volumeLevel"></span></p>
+          <p aria-label="Current Time"> Current Time: 0:<span class="currentTime"></span> / 1:08 </p>
+          <p aria-label="Volume Level"> Volume Level: <span class="volumeLevel"></span></p>
         </div>
       </div>
       <div class="video__controller__down">
-        <button id="volup" type="button"  aria-label="Volume Up">
+        <button id="volup" type="button"  aria-label="Volume Up Button" onkeydown="volumeUp()">
           <i class="fa-solid fa-volume-high"></i>
         </button>
-        <button id="voldown" type="button" aria-label="Volume Down">
+        <button id="voldown" type="button" aria-label="Volume Down Button" onkeydown="volumedown()">
           <i class="fa-solid fa-volume-low"></i>
         </button>
-        <button id="fullscreen" type="button" aria-label="Full Screen">
+        <button id="fullscreen" type="button" aria-label="Full Screen Button">
           <i class="fa-solid fa-maximize"></i>
         </button>
-        <button id="subtitles" type="button" aria-label="Subtitles">
+        <button id="subtitles" type="button" aria-label="Subtitles Button">
           <i class="fa-solid fa-closed-captioning"></i>
         </button>
       </div>
     </div>
     <div class="transcript">
-      <div id="transcriptBtn">
+      <div id="transcriptBtn" aria-label="transcript Button" onkeydown="showTranscriptBox()">
         <h4>Transcript</h4>
       </div>
-      <div class="transcript__text">
+      <div class="transcript__text" aria-label="transcript Text">
         <h6>
           [contemplative piano music] <br><br>
           JANE AKINYI: My name is Jane Akinyi. I am a self-advocate from Kenya. I was born

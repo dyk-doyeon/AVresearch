@@ -71,7 +71,7 @@
   margin-right: 10px;
 }
 
-#progress[value] {
+.video__controller__up #progress[value] {
   width: 550px;
   height: 30px;
   appearance: none;
@@ -79,14 +79,14 @@
   background-color: var(--color-white);
 }
 
-#progress[value]::-moz-progress-bar {
+.video__controller__up #progress[value]::-moz-progress-bar {
   background-image: linear-gradient(
     to right, var(--color-orange), var(--color-yellow)
   );
   transition: width 1s linear;
 }
 
-#progress[value]::-webkit-progress-value {
+.video__controller__up #progress[value]::-webkit-progress-value {
   background-image: linear-gradient(
     to right, var(--color-orange), var(--color-yellow)
   );
