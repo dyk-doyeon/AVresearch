@@ -113,6 +113,15 @@
   border: 3px solid var(--color-orange);
 }
 
+.magText p:first-child:hover {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.magText p:last-child:hover {
+  font-size: 25px;
+  cursor: pointer;
+}
 
 // Transcript
 #transcriptBtn {
